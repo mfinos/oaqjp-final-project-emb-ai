@@ -17,10 +17,6 @@ def emotion_detector_route():
     
     result = emotion_detector(text_to_analyze)
 
-    if result['dominant_emotion'] is None:
-        return "Invalid text! Please try again!"
-    
-    # Format the response as per the customer's request
     response = (
         f"For the given statement, the system response is "
         f"'anger': {result['anger']}, "
