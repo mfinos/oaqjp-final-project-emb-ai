@@ -32,6 +32,5 @@ def emotion_detector_route():
     )
     return response
 
-# If the script is run directly, run the Flask application
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000, debug=True) # Run the Flask application on localhost at port 5000 with debugging enabled
+    app.run(host='localhost', port=5000, debug=True)
